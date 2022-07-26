@@ -1,0 +1,17 @@
+<div class="container">
+    <br>
+    <div class="row">
+        <div class="col-md-3">
+            <button class="btn btn-success" (click)="assignComponent('comp1')">Component1 User</button>
+        </div>
+        <div class="col-md-3">
+            <button class="btn btn-danger" (click)="assignComponent('comp2')">Component2 User</button>
+        </div>
+        <div class="col-md-3">
+            <button class="btn btn-danger" (click)="createDynamicCompThroughFactory()">ComponentFactory User</button>
+        </div>
+    </div>
+            <ng-container *ngComponentOutlet="dummyComponent"></ng-container>
+
+            <ng-container appPlaceHolder></ng-container>
+</div>

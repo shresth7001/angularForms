@@ -1,0 +1,19 @@
+<div #box >
+    <h1>User Name is {{userName}}</h1>
+    <button (click)="changeChildProperty()">Change Child Property</button> &nbsp;
+    <button (click)="callChildMethod()">Access Child Method</button>
+</div>
+
+
+<app-childcomp1>
+    <div #projectedChildData>This is projected content data</div>
+</app-childcomp1>
+
+
+<!-- Using viewchild with directive -->
+
+<div rendererDirective >
+    <h1>User Name is {{userName}}</h1>
+    <button (click)="changeColor('red')">Red</button> &nbsp;
+    <button (click)="changeColor('green')">Green</button>
+</div>

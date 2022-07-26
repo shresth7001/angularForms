@@ -1,0 +1,16 @@
+<select (change)="getSelectedVal($event.target)">
+    <option>Please select some item</option>
+    <option value="Laptop">Laptop</option>
+    <option value="TV">TV</option>
+    <option value="Phone">Phone</option>
+    <option value="Microwave">Microwave</option>
+</select>
+
+<div [ngSwitch]="selectedValue">
+    <div *ngSwitchDefault>Please select some item</div>
+    <div *ngSwitchCase="'Laptop'">Laptop</div>
+    <div *ngSwitchCase="'TV'">TV</div>
+    <div *ngSwitchCase="'Phone'">Phone</div>
+    <div *ngSwitchCase="'Microwave'">Microwave</div>
+    
+</div>
